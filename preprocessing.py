@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # 1. Load the data
-df = pd.read_csv('data/transactions_upi_transaction_failure.csv')
+df = pd.read_csv('transactions_upi_transaction_failure.csv')
 # 2. Feature Engineering (Repeating the extraction from Step 2)
 df['Bank'] = df['Sender UPI ID'].str.split('@').str[1]
 df['Hour'] = pd.to_datetime(df['Timestamp']).dt.hour
