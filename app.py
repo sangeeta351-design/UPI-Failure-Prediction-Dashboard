@@ -30,7 +30,7 @@ st.markdown("""
 @st.cache_resource
 def load_and_train_pipeline():
     # Load dataset
-    df = pd.read_csv('data/transactions_upi_transaction_failure.csv')
+    df = pd.read_csv('transactions_upi_transaction_failure.csv')
 
     # Feature Engineering
     df['Bank'] = df['Sender UPI ID'].str.split('@').str[1]
