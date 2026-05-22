@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # --- 1. DATA LOADING & MODEL TRAINING ---
 # Ensure 'transactions_upi_transaction_failure.csv' is in the same directory
-df = pd.read_csv('data/transactions_upi_transaction_failure.csv')
+df = pd.read_csv('transactions_upi_transaction_failure.csv')
 
 # Feature Engineering: Extract attributes representing rural transactional environment
 df['Bank'] = df['Sender UPI ID'].str.split('@').str[1]
