@@ -1,0 +1,7 @@
+Python 3.X
+Streamlit
+Pandas
+Numpy
+Plotly
+Sci-kit Learn
+CSV/Excel
