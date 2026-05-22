@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # 1. DATA LOADING & PREPROCESSING
 # Ensure the CSV is in the same folder as this script
-df = pd.read_csv('data/transactions_upi_transaction_failure.csv')
+df = pd.read_csv('transactions_upi_transaction_failure.csv')
 
 # Feature Engineering: Extracting patterns relevant to rural environments
 df['Bank'] = df['Sender UPI ID'].str.split('@').str[1]
